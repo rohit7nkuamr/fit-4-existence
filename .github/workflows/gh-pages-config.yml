@@ -1,0 +1,18 @@
+name: GitHub Pages Configuration
+on:
+  workflow_dispatch:
+
+jobs:
+  configure:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      
+      - name: Configure GitHub Pages
+        run: |
+          echo "This workflow helps configure GitHub Pages settings"
+          echo "Please ensure you have set the following in your repository settings:"
+          echo "1. Go to Settings > Pages"
+          echo "2. Set Source to 'GitHub Actions'"
+          echo "3. Ensure proper permissions are set in the workflow file"
