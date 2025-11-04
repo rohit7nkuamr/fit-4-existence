@@ -72,8 +72,8 @@ export default function HeroSection() {
           >
             <div className="relative h-[300px] sm:h-[350px] md:h-[400px] lg:h-[500px] w-full rounded-xl md:rounded-2xl overflow-hidden">
               <Image
-                src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80"
-                alt="Doctor providing care"
+                src="/images/hero/main-hero.jpg" /* Place your hero image at this path */
+                alt="Dr. Prince Raj providing physiotherapy treatment"
                 fill
                 style={{ objectFit: 'cover' }}
                 priority

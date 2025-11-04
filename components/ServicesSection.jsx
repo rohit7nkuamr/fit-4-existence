@@ -10,56 +10,56 @@ const services = [
     title: 'Knee Pain',
     description: 'Specialized treatment for acute and chronic knee pain conditions.',
     icon: '/images/icons/knee.svg',
-    image: 'https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80'
+    image: '/images/services/knee-pain.jpg' /* Place your image at this path */
   },
   {
     id: 2,
     title: 'Back Pain',
     description: 'Effective therapies for lower and upper back pain relief.',
     icon: '/images/icons/back.svg',
-    image: 'https://images.unsplash.com/photo-1566125882500-87e10f726cdc?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80'
+    image: '/images/services/back-pain.jpg' /* Place your image at this path */
   },
   {
     id: 3,
     title: 'Paralysis',
     description: 'Rehabilitation and treatment for various types of paralysis.',
     icon: '/images/icons/paralysis.svg',
-    image: 'https://images.unsplash.com/photo-1579684385127-1ef15d508118?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=880&q=80'
+    image: '/images/services/paralysis.jpg' /* Place your image at this path */
   },
   {
     id: 4,
     title: 'Cervical Pain',
     description: 'Relief for neck and cervical spine discomfort and pain.',
     icon: '/images/icons/cervical.svg',
-    image: 'https://images.unsplash.com/photo-1614846384571-1e31fbd2db0a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80'
+    image: '/images/services/cervical-pain.jpg' /* Place your image at this path */
   },
   {
     id: 5,
     title: 'Cupping Therapy',
     description: 'Traditional therapy to improve blood flow and reduce pain.',
     icon: '/images/icons/cupping.svg',
-    image: 'https://images.unsplash.com/photo-1512290923902-8a9f81dc236c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80'
+    image: '/images/services/cupping-therapy.jpg' /* Place your image at this path */
   },
   {
     id: 6,
     title: 'Sciatica',
     description: 'Targeted treatment for sciatic nerve pain and related conditions.',
     icon: '/images/icons/sciatica.svg',
-    image: 'https://images.unsplash.com/photo-1576091160550-2173dba999ef?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80'
+    image: '/images/services/sciatica.jpg' /* Place your image at this path */
   },
   {
     id: 7,
     title: 'Shoulder Pain',
     description: 'Treatment for shoulder injuries, stiffness, and chronic pain.',
     icon: '/images/icons/shoulder.svg',
-    image: 'https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80'
+    image: '/images/services/shoulder-pain.jpg' /* Place your image at this path */
   },
   {
     id: 8,
     title: 'Muscle Pain',
     description: 'Relief for muscle strains, tension, and chronic muscle pain.',
     icon: '/images/icons/muscle.svg',
-    image: 'https://images.unsplash.com/photo-1588286840104-8457e3263156?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80'
+    image: '/images/services/muscle-pain.jpg' /* Place your image at this path */
   },
 ];
 
