@@ -198,7 +198,7 @@ export default function ContactSection() {
                   </div>
                   <div>
                     <h4 className="font-semibold text-base md:text-lg mb-0.5 md:mb-1">Email</h4>
-                    <p className="text-primary-100 text-sm md:text-base break-all">contact@fit4existence.com</p>
+                    <p className="text-primary-100 text-sm md:text-base break-all">fit4existence@gmail.com</p>
                   </div>
                 </div>
                 
@@ -209,8 +209,11 @@ export default function ContactSection() {
                   <div>
                     <h4 className="font-semibold text-base md:text-lg mb-0.5 md:mb-1">Location</h4>
                     <p className="text-primary-100 text-sm md:text-base">
-                      Your Location, City, State, India
+                      Gaya, Bodhgaya, Bihar, India
                     </p>
+                    <a href="https://www.google.com/maps/search/fit+4+existence+physiotherapy+gaya/" target="_blank" rel="noopener noreferrer" className="text-gold-400 text-sm md:text-base hover:text-gold-300 mt-1 inline-block">
+                      View on Google Maps
+                    </a>
                   </div>
                 </div>
                 

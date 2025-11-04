@@ -24,7 +24,7 @@ export default function Navbar() {
   }, []);
 
   return (
-    <header className={`fixed w-full z-50 transition-all duration-300 ${scrolled ? 'bg-black shadow-md py-1.5 md:py-2' : 'bg-transparent py-3 md:py-4'}`}>
+    <header className={`fixed w-full z-50 transition-all duration-300 ${scrolled ? 'bg-[#faf7f2] shadow-md py-1.5 md:py-2' : 'bg-transparent py-3 md:py-4'}`}>
       <div className="container-custom flex justify-between items-center">
         <Link href="/" className="flex items-center">
           <div className="mr-2">
@@ -70,21 +70,21 @@ export default function Navbar() {
 
       {/* Mobile Navigation */}
       {isOpen && (
-        <div className="md:hidden bg-black shadow-lg fixed top-[53px] left-0 right-0 max-h-[calc(100vh-53px)] overflow-y-auto z-50 border-t border-gold-600">
+        <div className="md:hidden bg-[#faf7f2] shadow-lg fixed top-[53px] left-0 right-0 max-h-[calc(100vh-53px)] overflow-y-auto z-50 border-t border-[#e5d8c3]">
           <div className="container-custom py-4 flex flex-col space-y-4">
-            <Link href="/#home" className="font-medium text-gold-500 hover:text-gold-400 transition-colors py-2 px-2 active:bg-gray-900 rounded-md" onClick={() => setIsOpen(false)}>
+            <Link href="/#home" className="font-medium text-gold-500 hover:text-gold-400 transition-colors py-2 px-2 active:bg-[#f0e6d6] rounded-md" onClick={() => setIsOpen(false)}>
               Home
             </Link>
-            <Link href="/#services" className="font-medium text-gold-500 hover:text-gold-400 transition-colors py-2 px-2 active:bg-gray-900 rounded-md" onClick={() => setIsOpen(false)}>
+            <Link href="/#services" className="font-medium text-gold-500 hover:text-gold-400 transition-colors py-2 px-2 active:bg-[#f0e6d6] rounded-md" onClick={() => setIsOpen(false)}>
               Services
             </Link>
-            <Link href="/#about" className="font-medium text-gold-500 hover:text-gold-400 transition-colors py-2 px-2 active:bg-gray-900 rounded-md" onClick={() => setIsOpen(false)}>
+            <Link href="/#about" className="font-medium text-gold-500 hover:text-gold-400 transition-colors py-2 px-2 active:bg-[#f0e6d6] rounded-md" onClick={() => setIsOpen(false)}>
               About Us
             </Link>
-            <Link href="/#testimonials" className="font-medium text-gold-500 hover:text-gold-400 transition-colors py-2 px-2 active:bg-gray-900 rounded-md" onClick={() => setIsOpen(false)}>
+            <Link href="/#testimonials" className="font-medium text-gold-500 hover:text-gold-400 transition-colors py-2 px-2 active:bg-[#f0e6d6] rounded-md" onClick={() => setIsOpen(false)}>
               Testimonials
             </Link>
-            <Link href="/#contact" className="font-medium text-gold-500 hover:text-gold-400 transition-colors py-2 px-2 active:bg-gray-900 rounded-md" onClick={() => setIsOpen(false)}>
+            <Link href="/#contact" className="font-medium text-gold-500 hover:text-gold-400 transition-colors py-2 px-2 active:bg-[#f0e6d6] rounded-md" onClick={() => setIsOpen(false)}>
               Contact
             </Link>
             <div className="pt-2">
