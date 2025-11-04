@@ -1,15 +1,14 @@
-# Fit 4 Existence - Medical Care Website
+# Fit 4 Existence - Medical Website
 
-A modern, responsive website for Fit 4 Existence, a medical care service specializing in pain management and home visits.
+A modern, responsive website for Fit 4 Existence, a medical service provider specializing in pain management and personalized care.
 
 ## Features
 
 - Modern, responsive design
-- Service showcase
-- Doctor profiles section
-- Testimonials/reviews section
-- Contact form
+- Interactive UI elements with animations
+- Sections for services, about us, doctor profiles, testimonials, and contact
 - Mobile-friendly navigation
+- Optimized for performance
 
 ## Tech Stack
 
@@ -23,48 +22,56 @@ A modern, responsive website for Fit 4 Existence, a medical care service special
 
 ### Prerequisites
 
-- Node.js 18+ and npm
+- Node.js 18 or later
+- npm or yarn
 
 ### Installation
 
 1. Clone the repository
-   ```
-   git clone <repository-url>
+   ```bash
+   git clone https://github.com/rohit7nkuamr/fit-4-existence.git
+   cd fit-4-existence
    ```
 
 2. Install dependencies
-   ```
+   ```bash
    npm install
    ```
 
 3. Run the development server
-   ```
+   ```bash
    npm run dev
    ```
 
-4. Open [http://localhost:3000](http://localhost:3000) in your browser to see the result.
+4. Open [http://localhost:3000](http://localhost:3000) in your browser
 
 ## Deployment to GitHub Pages
 
-1. Create a GitHub repository for your project
+### Automatic Deployment
 
-2. Push your code to GitHub
+Use the gh-pages package for easy deployment:
+
+```bash
+npm run deploy
+```
+
+This will build the site and deploy it to the gh-pages branch.
+
+### Manual Deployment
+
+1. Build the site
+   ```bash
+   npm run build
    ```
-   git add .
-   git commit -m "Initial commit"
-   git branch -M main
-   git remote add origin <your-github-repo-url>
-   git push -u origin main
+
+2. Create a `.nojekyll` file in the `out` directory
+   ```bash
+   type nul > out/.nojekyll
    ```
 
-3. Configure GitHub Pages:
-   - Go to your repository settings
-   - Navigate to "Pages"
-   - Select "GitHub Actions" as the source
-   - Choose the Next.js workflow
-
-4. Create a GitHub Actions workflow file:
-   - Create a `.github/workflows/nextjs.yml` file with the appropriate configuration for Next.js deployment
+3. Deploy the `out` directory to GitHub Pages
+   - You can use the GitHub Pages settings in your repository
+   - Set the source to the gh-pages branch
 
 ## Customization
 
