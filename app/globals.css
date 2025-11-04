@@ -8,6 +8,11 @@
   --background-end-rgb: 255, 255, 255;
   --header-height: 70px;
   --header-height-mobile: 60px;
+  --gold-light: #f7d046;
+  --gold-medium: #edc531;
+  --gold-dark: #d4af37;
+  --black-primary: #000000;
+  --black-secondary: #111111;
 }
 
 html {
@@ -54,14 +59,22 @@ body {
   }
   
   .btn-primary {
-    @apply bg-primary-600 hover:bg-primary-700 text-white font-medium py-3 px-6 rounded-lg transition-all duration-300 inline-flex items-center justify-center;
+    @apply bg-black hover:bg-gray-900 text-gold-600 font-medium py-3 px-6 rounded-lg transition-all duration-300 inline-flex items-center justify-center;
   }
   
   .btn-secondary {
-    @apply bg-white border border-gray-300 hover:border-primary-500 text-gray-800 font-medium py-3 px-6 rounded-lg transition-all duration-300 inline-flex items-center justify-center;
+    @apply bg-gold-500 border border-gold-600 hover:bg-gold-600 text-black font-medium py-3 px-6 rounded-lg transition-all duration-300 inline-flex items-center justify-center;
   }
   
   .card {
-    @apply bg-white rounded-xl shadow-md hover:shadow-lg transition-shadow duration-300 overflow-hidden;
+    @apply bg-white rounded-xl shadow-md hover:shadow-lg transition-shadow duration-300 overflow-hidden border border-gold-300;
+  }
+  
+  .card-gold {
+    @apply bg-gradient-to-r from-gold-400 to-gold-600 rounded-xl shadow-md hover:shadow-lg transition-shadow duration-300 overflow-hidden text-black;
+  }
+  
+  .card-black {
+    @apply bg-black rounded-xl shadow-md hover:shadow-lg transition-shadow duration-300 overflow-hidden text-gold-500 border border-gold-600;
   }
 }
