@@ -8,8 +8,9 @@ const nextConfig = {
   output: 'export',
   distDir: 'out',
   trailingSlash: true,
-  // Add basePath for GitHub Pages repository name if not using a custom domain
-  // basePath: '/fit-4-existence',
+  // Add basePath for GitHub Pages repository name
+  basePath: '/fit-4-existence',
+  assetPrefix: '/fit-4-existence/',
 }
 
 module.exports = nextConfig

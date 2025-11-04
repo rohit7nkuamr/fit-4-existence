@@ -5,10 +5,10 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
+    "postbuild": "node fix-github-pages.js",
     "start": "next start",
     "lint": "next lint",
-    "postbuild": "node deploy.js",
-    "deploy": "next build && node deploy.js"
+    "deploy": "next build && node fix-github-pages.js"
   },
   "dependencies": {
     "next": "14.0.0",
