@@ -6,10 +6,12 @@ import TestimonialsSection from '../components/TestimonialsSection';
 import DoctorProfilesSection from '../components/DoctorProfilesSection';
 import ContactSection from '../components/ContactSection';
 import Footer from '../components/Footer';
+import StructuredData from '../components/StructuredData';
 
 export default function Home() {
   return (
     <main>
+      <StructuredData />
       <Navbar />
       <HeroSection />
       <ServicesSection />

@@ -5,6 +5,15 @@ import Image from 'next/image';
 import { useState } from 'react';
 import { FiX } from 'react-icons/fi';
 
+export const metadata = {
+  title: 'Patient Gallery - Fit 4 Existence | Physiotherapy Treatment Photos',
+  description: 'View our patient treatment gallery showcasing successful physiotherapy sessions, rehabilitation progress, and recovery journeys at Fit 4 Existence, Gaya.',
+  openGraph: {
+    title: 'Patient Treatment Gallery - Fit 4 Existence',
+    description: 'Witness the journey of recovery and healing through our patient treatment photos.',
+  },
+};
+
 export default function GalleryPage() {
   const [selectedImage, setSelectedImage] = useState(null);
 
