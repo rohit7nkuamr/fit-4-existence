@@ -4,6 +4,8 @@ import { motion } from 'framer-motion';
 import Link from 'next/link';
 import Image from 'next/image';
 import { useEffect, useState } from 'react';
+import { FiPhone } from 'react-icons/fi';
+import { FaWhatsapp } from 'react-icons/fa';
 
 export default function HeroSection() {
   const [isMobile, setIsMobile] = useState(false);
@@ -34,11 +36,29 @@ export default function HeroSection() {
             <p className="text-base md:text-lg text-gray-700 mb-6 md:mb-8 max-w-lg mx-auto lg:mx-0 text-center lg:text-left">
               We are committed to providing personalized, compassionate medical care to ensure your well-being and cure you through any pain.
             </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
-              <Link href="/#contact" className="btn-primary text-center w-full sm:w-auto px-6 py-3">
+            <div className="flex flex-col gap-4 justify-center lg:justify-start">
+              <Link href="/#contact" className="btn-primary text-center w-full px-6 py-3">
                 Book Appointment
               </Link>
-              <Link href="/#services" className="btn-secondary text-center w-full sm:w-auto">
+              <div className="flex flex-col sm:flex-row gap-3 sm:gap-4">
+                <a 
+                  href="tel:+916287811094" 
+                  className="flex-1 bg-gold-600 text-white py-3 px-6 rounded-lg hover:bg-gold-700 transition-colors flex items-center justify-center space-x-2 font-medium"
+                >
+                  <FiPhone size={20} />
+                  <span>Call Now</span>
+                </a>
+                <a 
+                  href="https://wa.me/916287811094" 
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex-1 bg-green-500 text-white py-3 px-6 rounded-lg hover:bg-green-600 transition-colors flex items-center justify-center space-x-2 font-medium"
+                >
+                  <FaWhatsapp size={20} />
+                  <span>WhatsApp</span>
+                </a>
+              </div>
+              <Link href="/#services" className="btn-secondary text-center w-full">
                 Explore Services
               </Link>
             </div>
