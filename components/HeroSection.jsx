@@ -35,7 +35,7 @@ export default function HeroSection() {
               We are committed to providing personalized, compassionate medical care to ensure your well-being and cure you through any pain.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
-              <Link href="/#contact" className="btn-primary text-center w-full sm:w-auto">
+              <Link href="/#contact" className="btn-primary text-center w-full sm:w-auto px-6 py-3">
                 Book Appointment
               </Link>
               <Link href="/#services" className="btn-secondary text-center w-full sm:w-auto">

@@ -2,6 +2,7 @@
 
 import { motion } from 'framer-motion';
 import Image from 'next/image';
+import Link from 'next/link';
 import { FiArrowRight } from 'react-icons/fi';
 
 const services = [
@@ -111,9 +112,9 @@ export default function ServicesSection() {
               <div className="p-4 md:p-6">
                 <h3 className="text-xl md:text-2xl font-semibold text-primary-800 mb-2">{service.title}</h3>
                 <p className="text-sm md:text-base text-gray-600 mb-3 md:mb-4">{service.description}</p>
-                <button className="flex items-center text-primary-600 text-sm md:text-base font-medium hover:text-primary-800 transition-colors">
-                  Learn more <FiArrowRight className="ml-2" />
-                </button>
+                <Link href="/#contact" className="flex items-center text-gold-600 text-sm md:text-base font-medium hover:text-gold-700 transition-colors">
+                  Contact Us <FiArrowRight className="ml-2" />
+                </Link>
               </div>
             </motion.div>
           ))}
