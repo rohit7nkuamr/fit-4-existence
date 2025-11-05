@@ -52,7 +52,7 @@ export default function HeroSection() {
                 ))}
               </div>
               <div>
-                <p className="font-semibold text-sm md:text-base">500+ Happy Patients</p>
+                <p className="font-semibold text-sm md:text-base">100+ Happy Patients</p>
                 <div className="flex text-gold-500">
                   {[1, 2, 3, 4, 5].map((i) => (
                     <svg key={i} xmlns="http://www.w3.org/2000/svg" className="h-4 w-4 md:h-5 md:w-5" viewBox="0 0 20 20" fill="currentColor">
