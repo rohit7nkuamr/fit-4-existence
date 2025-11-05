@@ -2,19 +2,18 @@
 
 import { motion } from 'framer-motion';
 import Image from 'next/image';
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { FiX } from 'react-icons/fi';
 
-export const metadata = {
-  title: 'Patient Gallery - Fit 4 Existence | Physiotherapy Treatment Photos',
-  description: 'View our patient treatment gallery showcasing successful physiotherapy sessions, rehabilitation progress, and recovery journeys at Fit 4 Existence, Gaya.',
-  openGraph: {
-    title: 'Patient Treatment Gallery - Fit 4 Existence',
-    description: 'Witness the journey of recovery and healing through our patient treatment photos.',
-  },
-};
-
 export default function GalleryPage() {
+  // Set page title and meta description dynamically
+  useEffect(() => {
+    document.title = 'Patient Gallery - Fit 4 Existence | Physiotherapy Treatment Photos';
+    const metaDescription = document.querySelector('meta[name="description"]');
+    if (metaDescription) {
+      metaDescription.setAttribute('content', 'View our patient treatment gallery showcasing successful physiotherapy sessions, rehabilitation progress, and recovery journeys at Fit 4 Existence, Gaya.');
+    }
+  }, []);
   const [selectedImage, setSelectedImage] = useState(null);
 
   // Gallery images - Add your patient treatment photos here
