@@ -3,8 +3,5 @@
   "devCommand": "npm run dev",
   "installCommand": "npm install",
   "framework": "nextjs",
-  "regions": ["bom1"],
-  "env": {
-    "WEB3FORMS_ACCESS_KEY": "@web3forms_access_key"
-  }
+  "regions": ["bom1"]
 }
