@@ -15,7 +15,7 @@ export default function Logo({ size = 'md' }) {
     <div className="relative flex items-center justify-center">
       <div className="relative overflow-hidden rounded-full">
         <Image
-          src="/images/logo/logo.png" /* Place your logo image at this path */
+          src="/images/logo/Logo.png" /* Place your logo image at this path */
           alt="Fit 4 Existence Logo"
           width={dimensions[size].width}
           height={dimensions[size].height}

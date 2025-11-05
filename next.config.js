@@ -8,8 +8,12 @@ const nextConfig = {
   output: 'export',
   distDir: 'out',
   trailingSlash: true,
-  basePath: '/fit-4-existence',
-  assetPrefix: '/fit-4-existence/',
+}
+
+// Only add basePath and assetPrefix when building for production/GitHub Pages
+if (process.env.NODE_ENV === 'production' || process.env.GITHUB_ACTIONS) {
+  nextConfig.basePath = '/fit-4-existence'
+  nextConfig.assetPrefix = '/fit-4-existence/'
 }
 
 module.exports = nextConfig
