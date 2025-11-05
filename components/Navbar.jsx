@@ -10,19 +10,35 @@ import Logo from './Logo';
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
+  const [hidden, setHidden] = useState(false);
+  const [lastScrollY, setLastScrollY] = useState(0);
 
   useEffect(() => {
     const handleScroll = () => {
-      if (window.scrollY > 10) {
+      const currentScrollY = window.scrollY;
+      
+      // Determine if scrolled past threshold
+      if (currentScrollY > 10) {
         setScrolled(true);
       } else {
         setScrolled(false);
       }
+      
+      // Hide navbar when scrolling down, show when scrolling up
+      if (currentScrollY > lastScrollY && currentScrollY > 100) {
+        // Scrolling down
+        setHidden(true);
+      } else {
+        // Scrolling up
+        setHidden(false);
+      }
+      
+      setLastScrollY(currentScrollY);
     };
 
     window.addEventListener('scroll', handleScroll);
     return () => window.removeEventListener('scroll', handleScroll);
-  }, []);
+  }, [lastScrollY]);
 
   return (
     <>
@@ -33,7 +49,7 @@ export default function Navbar() {
         </div>
       </Link>
       
-      <header className={`fixed w-full z-50 transition-all duration-300 ${scrolled ? 'bg-[#faf7f2] shadow-md py-1 md:py-1.5' : 'bg-transparent py-1.5 md:py-2'}`}>
+      <header className={`fixed w-full z-50 transition-all duration-300 ${hidden ? '-translate-y-full' : 'translate-y-0'} ${scrolled ? 'bg-[#faf7f2] shadow-md py-1 md:py-1.5' : 'bg-transparent py-1.5 md:py-2'}`}>
       <div className="container-custom flex justify-between items-center">
         {/* Empty space for logo */}
         <div className="w-28 md:w-36"></div>
