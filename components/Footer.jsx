@@ -23,9 +23,10 @@ export default function Footer() {
         {/* Desktop Footer */}
         <div className="hidden md:grid md:grid-cols-2 lg:grid-cols-4 gap-8">
           <div>
-            <div className="flex items-center mb-4">
-              <Logo size="md" />
-              <h3 className="font-display font-bold text-xl ml-3 text-gold-600">Fit 4 Existence</h3>
+            <div className="flex justify-start mb-4">
+              <div style={{ width: '120px', height: '120px' }}>
+                <Logo size="xl" />
+              </div>
             </div>
             <p className="text-gray-600 mb-4">
               We are committed to providing personalized, compassionate medical care to ensure your well-being and cure you through any pain.
@@ -117,9 +118,10 @@ export default function Footer() {
         <div className="md:hidden">
           <div className="mb-6">
             <div className="flex justify-center mb-4">
-              <Logo size="md" />
+              <div style={{ width: '120px', height: '120px' }}>
+                <Logo size="xl" />
+              </div>
             </div>
-            <h3 className="font-display font-bold text-xl mb-4 text-center text-gold-600">Fit 4 Existence</h3>
             <p className="text-gray-600 mb-4 text-center">
               We are committed to providing personalized, compassionate medical care.
             </p>

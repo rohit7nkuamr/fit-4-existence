@@ -2,6 +2,8 @@
 
 import { motion } from 'framer-motion';
 import Image from 'next/image';
+import { FiInstagram, FiLinkedin } from 'react-icons/fi';
+import { FaWhatsapp } from 'react-icons/fa';
 
 // Doctor profiles with local image paths
 const doctors = [
@@ -14,6 +16,11 @@ const doctors = [
     experience: '3+ years',
     certification: 'Certified Orthopedic Manual Therapist (COMT), Myofacialrelease (MFR), Cupping therapy, Dry needling, ISTAM deep tissue release, Kynesio taping and many other techniques.',
     education: 'Bachelor of Physiotherapy (BPT)',
+    socials: {
+      instagram: 'https://instagram.com/fit4existence', // Add your Instagram URL
+      whatsapp: 'https://wa.me/916287811094', // WhatsApp number with country code
+      linkedin: 'https://linkedin.com/in/prince-raj-physiotherapist' // Add your LinkedIn URL
+    }
   },
 ];
 
@@ -96,7 +103,35 @@ export default function DoctorProfilesSection() {
                   </div>
                   
                   <div className="mt-4">
-                    <button className="btn-secondary w-full text-sm md:text-base py-2 md:py-3">View Profile</button>
+                    <div className="flex items-center justify-center space-x-4">
+                      <a 
+                        href={doctor.socials.instagram} 
+                        target="_blank" 
+                        rel="noopener noreferrer"
+                        className="bg-gradient-to-r from-purple-500 to-pink-500 text-white p-3 rounded-full hover:scale-110 transition-transform"
+                        aria-label="Instagram"
+                      >
+                        <FiInstagram size={20} />
+                      </a>
+                      <a 
+                        href={doctor.socials.whatsapp} 
+                        target="_blank" 
+                        rel="noopener noreferrer"
+                        className="bg-green-500 text-white p-3 rounded-full hover:scale-110 transition-transform"
+                        aria-label="WhatsApp"
+                      >
+                        <FaWhatsapp size={20} />
+                      </a>
+                      <a 
+                        href={doctor.socials.linkedin} 
+                        target="_blank" 
+                        rel="noopener noreferrer"
+                        className="bg-blue-600 text-white p-3 rounded-full hover:scale-110 transition-transform"
+                        aria-label="LinkedIn"
+                      >
+                        <FiLinkedin size={20} />
+                      </a>
+                    </div>
                   </div>
                 </div>
               </div>

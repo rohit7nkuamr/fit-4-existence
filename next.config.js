@@ -5,15 +5,9 @@ const nextConfig = {
     domains: ['images.unsplash.com', 'via.placeholder.com'],
     unoptimized: true,
   },
-  output: 'export',
-  distDir: 'out',
+  // Remove 'output: export' for Vercel deployment to enable API routes
+  // output: 'export',
   trailingSlash: true,
-}
-
-// Only add basePath and assetPrefix when building for production/GitHub Pages
-if (process.env.NODE_ENV === 'production' || process.env.GITHUB_ACTIONS) {
-  nextConfig.basePath = '/fit-4-existence'
-  nextConfig.assetPrefix = '/fit-4-existence/'
 }
 
 module.exports = nextConfig

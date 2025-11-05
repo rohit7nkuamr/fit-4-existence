@@ -28,23 +28,42 @@ export default function ContactSection() {
     e.preventDefault();
     setIsSubmitting(true);
     
-    // Simulate form submission
-    setTimeout(() => {
-      setIsSubmitting(false);
-      setSubmitSuccess(true);
+    try {
+      // Send email using API route
+      const response = await fetch('/api/send-email', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(formData),
+      });
       
-      // Reset form after showing success message
-      setTimeout(() => {
-        setSubmitSuccess(false);
-        setFormData({
-          name: '',
-          email: '',
-          phone: '',
-          service: '',
-          message: '',
-        });
-      }, 5000);
-    }, 1500);
+      const data = await response.json();
+      
+      setIsSubmitting(false);
+      
+      if (data.success) {
+        setSubmitSuccess(true);
+        
+        // Reset form after showing success message
+        setTimeout(() => {
+          setSubmitSuccess(false);
+          setFormData({
+            name: '',
+            email: '',
+            phone: '',
+            service: '',
+            message: '',
+          });
+        }, 5000);
+      } else {
+        alert('Failed to send message. Please try calling or WhatsApp instead.');
+      }
+    } catch (error) {
+      setIsSubmitting(false);
+      console.error('Error:', error);
+      alert('Failed to send message. Please try calling or WhatsApp instead.');
+    }
   };
   
   return (
