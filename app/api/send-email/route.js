@@ -14,7 +14,7 @@ export async function POST(request) {
         'Accept': 'application/json'
       },
       body: JSON.stringify({
-        access_key: 'c8c0e8e4-7f5d-4b3a-9c2e-1a4b5c6d7e8f', // Replace with your Web3Forms key
+        access_key: 'f1d0650b-0d08-40ec-9dad-8554f87134f6', // Replace with your Web3Forms key
         subject: `New Appointment Request from ${name}`,
         from_name: 'Fit 4 Existence Website',
         email: 'fit4existence@gmail.com',
